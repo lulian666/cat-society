@@ -1,15 +1,13 @@
-import ScrollFeed from "./components/ScrollFeed";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+
+import Views from "./views";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <ScrollFeed />
-        <ScrollFeed />
-        <ScrollFeed />
-        <ScrollFeed />
-      </div>
+      
+      <Views />
+      
     </BrowserRouter>
   );
 }

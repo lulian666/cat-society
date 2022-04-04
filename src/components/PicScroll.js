@@ -5,13 +5,12 @@ export default function PicScroll(props) {
 
     return (
         <div className="pic-scroll">
-            <SmallPic coverImg="juanjuan.jpg"/>
-            <SmallPic coverImg="juanjuan.jpg"/>
-            <SmallPic coverImg="juanjuan.jpg"/>
-            <SmallPic coverImg="juanjuan.jpg"/>
-            <SmallPic coverImg="juanjuan.jpg"/>
-            <SmallPic coverImg="juanjuan.jpg"/>
-            <SmallPic coverImg="juanjuan.jpg"/>
+            <SmallPic coverImg={props.coverImg}/>
+            <SmallPic coverImg={props.coverImg}/>
+            <SmallPic coverImg={props.coverImg}/>
+            <SmallPic coverImg={props.coverImg}/>
+            <SmallPic coverImg={props.coverImg}/>
+            <SmallPic coverImg={props.coverImg}/>
         </div>
         
     )
