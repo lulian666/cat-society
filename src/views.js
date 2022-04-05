@@ -3,9 +3,8 @@ import { TabBar } from 'antd-mobile';
 import { Route, Switch, useHistory, useLocation, MemoryRouter as Router, } from 'react-router-dom';
 import { AppOutline, MessageOutline, UnorderedListOutline, UserOutline, } from 'antd-mobile-icons';
 import styles from './antd.css';
-
-import ScrollFeed from "./components/ScrollFeed";
 import Outside from './pages/Outside';
+import Home from './pages/Home';
 
 const Bottom = () => {
     const history = useHistory();
@@ -21,13 +20,8 @@ const Bottom = () => {
             icon: <AppOutline />,
         },
         {
-            key: '/todo',
-            title: '我的待办',
-            icon: <UnorderedListOutline />,
-        },
-        {
-            key: '/message',
-            title: '我的消息',
+            key: '/friends',
+            title: '好朋友',
             icon: <MessageOutline />,
         },
         {
@@ -51,18 +45,14 @@ export default () => {
             <Route exact path='/home'>
               <Outside />
             </Route>
-            <Route exact path='/todo'>
-              <Todo />
-            </Route>
-            <Route exact path='/message'>
+            <Route exact path='/friends'>
               <Message />
             </Route>
             <Route exact path='/me'>
-              <PersonalCenter />
+              <Home />
             </Route>
           </Switch>
         </div>
-        {/* <div className={styles.bottom}> */}
         <div className="nav-bottom">
           <Bottom />
         </div>
@@ -70,16 +60,10 @@ export default () => {
     </Router>);
 };
 
-function Todo() {
-    return <div>我的待办</div>;
-}
-function Message() {
-    return <div>我的消息</div>;
-}
-function PersonalCenter() {
-    return <div>个人中心</div>;
-}
 
+function Message() {
+    return <div>好朋友们</div>;
+}
 
 
 

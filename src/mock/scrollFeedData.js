@@ -11,7 +11,7 @@ export default {
             {
                 "id": "181913648",
                 "screenname": "傻猫",
-                "avatarImg": "circle-pic.png",
+                "avatarImg": "shamao.jpg",
                 "coverImg": "juanjuan.jpg"
             },
             {

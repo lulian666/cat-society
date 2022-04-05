@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { InfiniteScroll, List, DotLoading } from 'antd-mobile';
 import scrollFeedData from "../mock/scrollFeedData"
 
-// import { mockRequest } from '../mock/mock-request';
 
 const InfiniteScrollContent = ({ hasMore }) => {
     return (<>
@@ -24,7 +23,7 @@ export default function Outside() {
         setHasMore(append.length > 0);
     }
     return (<>
-      <List>
+      <List className="outside-feed-container">
         {data.map((item, index) => {
             return(
                 <ScrollFeed 
@@ -38,26 +37,3 @@ export default function Outside() {
       </InfiniteScroll>
     </>);
 };
-
-
-// export default function Outside() {
-//     return (
-//         <div className="outside-feed-container">
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//             <ScrollFeed />
-//         </div>
-//     )
-// }

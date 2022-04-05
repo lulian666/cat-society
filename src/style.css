@@ -7,6 +7,10 @@ body {
   font-family: 'ZCOOL KuaiLe', cursive;
 }
 
+.home {
+  margin-bottom: 80px;
+}
+
 .nav-bottom {
   flex: 0;
   border-top: solid 1px var(--adm-border-color);
@@ -48,7 +52,7 @@ body {
   margin: 5px;
 }
 
-.pic-scroll {
+.pic-scroll, .avatar-scroll {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
